@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR Prep Deck</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1>STAR Prep Deck</h1>
+        <p>Your personal behavioral interview flashcard app</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Section 1: Add a New Card -->
+        <section class="form-section card">
+            <h2>Add a New Card</h2>
+            <form id="add-card-form">
+                <div class="form-group">
+                    <label for="question-input">Question:</label>
+                    <input type="text" id="question-input" placeholder="e.g., Tell me about a time you faced a conflict..." required>
+                </div>
+                
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="situation-input">Situation:</label>
+                        <textarea id="situation-input" placeholder="What was the context?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-input">Task:</label>
+                        <textarea id="task-input" placeholder="What was your responsibility?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="action-input">Action:</label>
+                        <textarea id="action-input" placeholder="What steps did you take?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="result-input">Result:</label>
+                        <textarea id="result-input" placeholder="What was the outcome?"></textarea>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Save Card</button>
+                <p id="save-success-msg" class="save-success">Card saved!</p>
+            </form>
+        </section>
+
+        <!-- Section 2: The Flashcard Viewer -->
+        <section class="flashcard-viewer card">
+            <h2>Your Deck</h2>
+            <p id="card-counter">Card 0 of 0</p>
+            
+            <!-- This is the 3D flippable card -->
+            <div class="flashcard-container" id="flashcard">
+                <div class="card-inner">
+                    <!-- Front of the card (Question) -->
+                    <div class="card-front">
+                        <p id="card-question">Your question will appear here. Add a card to get started!</p>
+                    </div>
+                    <!-- Back of the card (Answer) -->
+                    <div class="card-back">
+                        <div id="card-answer">
+                            <p><strong>Situation:</strong> <span id="answer-situation"></span></p>
+                            <p><strong>Task:</strong> <span id="answer-task"></span></p>
+                            <p><strong>Action:</strong> <span id="answer-action"></span></p>
+                            <p><strong>Result:</strong> <span id="answer-result"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <button class="btn" id="prev-btn">&larr; Previous</button>
+                <button class="btn btn-secondary" id="flip-btn">Flip Card</button>
+                <button class="btn" id="next-btn">Next &rarr;</button>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
