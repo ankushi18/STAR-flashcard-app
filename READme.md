@@ -30,7 +30,7 @@ How to Use
 
 Option 1: Live Demo
 
-Visit the live demo link: [YOUR-LINK-HERE]
+Visit the live demo link: [ https://ankushi18.github.io/STAR-flashcard-app/]
 
 Option 2: Run Locally
 
