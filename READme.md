@@ -2,7 +2,7 @@ STAR Prep Deck: Interview Flashcard App
 
 A flashcard app for practicing behavioral interview questions using the STAR (Situation, Task, Action, Result) method. This app saves all your cards to your browser's local storage.
 
-[Live Demo Link Here] (You can add this later when you host it!)
+[Live Demo Link : https://ankushi18.github.io/STAR-flashcard-app/ ]
 
 Features
 
